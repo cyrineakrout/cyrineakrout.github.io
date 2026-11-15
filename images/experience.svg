@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none" xmlns:c2pa="http://c2pa.org/manifest">
 <ellipse cx="200" cy="282" rx="150" ry="12" fill="#000" opacity=".25"/>
-<rect x="100" y="120" width="200" height="150" rx="16" fill="#5b5bd6"/>
+<rect x="100" y="120" width="200" height="150" rx="16" fill="#8e3f7f"/>
 <path d="M160 120v-20a12 12 0 0 1 12-12h56a12 12 0 0 1 12 12v20" stroke="#f4f2ff" stroke-width="10"/>
-<rect x="100" y="170" width="200" height="16" fill="#4747b8"/>
+<rect x="100" y="170" width="200" height="16" fill="#6e2f63"/>
 <rect x="184" y="160" width="32" height="36" rx="6" fill="#ffd166"/>
 <g transform="translate(300 70) rotate(35)">
  <path d="M0-50 C18-30 18 10 12 30 H-12 C-18 10 -18-30 0-50Z" fill="#f4f2ff"/>
