@@ -72,7 +72,7 @@ svg { display: block; }
 .landing { position: relative; min-height: 100vh; min-height: 100svh; display: flex; }
 .landing-left {
   flex: 0 0 35%; position: relative;
-  background: linear-gradient(160deg, #5a2d55 0%, #3d1f3d 60%, #2a1530 100%);
+  background: linear-gradient(160deg, #34323f 0%, #2a2834 60%, #23222d 100%);
   overflow: hidden;
 }
 .landing-left::before { /* soft dotted texture */
