@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyrine Akrout — Portfolio</title>
+  <meta name="description" content="Portfolio of Cyrine Akrout, MSc student in Data Science and Financial Engineering at EPFL — machine learning, NLP, computer vision and quantitative finance projects." />
+  <meta name="theme-color" content="#1d1c26" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='32' fill='%237b7cf0'/><text x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='30' fill='white'>ca</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="signature">Cyrine</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
+    <nav>
+      <a href="#home"><svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg>Home</a>
+      <a href="#about"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>About</a>
+      <a href="#education"><svg viewBox="0 0 24 24"><path d="M12 4 1 9l11 5 9-4.1V16h2V9z"/><path d="M5 12.5V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.5l-7 3.2z"/></svg>Education</a>
+      <a href="#skills"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5 1.4-1.4L5.8 12l3.6-3.6zm8 0-1.4 1.4 3.6 3.6-3.6 3.6L16 17l5-5z"/></svg>Skills</a>
+      <a href="#experience"><svg viewBox="0 0 24 24"><path d="M9 3h6a2 2 0 0 1 2 2v2h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3V5a2 2 0 0 1 2-2zm0 4h6V5H9z"/></svg>Experience</a>
+      <a href="#projects"><svg viewBox="0 0 24 24"><path d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm10 0h8v8h-8z"/></svg>Projects</a>
+      <a href="#hobbies"><svg viewBox="0 0 24 24"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-3.1A7 7 0 0 0 19 11z"/></svg>Beyond the code</a>
+      <a href="#contact"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7z"/></svg>Contact</a>
+    </nav>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <main>
+    <!-- ============ LANDING ============ -->
+    <section class="landing" id="home">
+      <div class="landing-left">
+        <div class="landing-socials">
+          <a href="https://www.linkedin.com/in/cyrineakrout/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="https://github.com/cyrineakrout" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="landing-avatar">
+        <img src="images/profile.jpg" alt="Portrait of Cyrine Akrout" width="480" height="480" />
+      </div>
+
+      <div class="landing-right">
+        <div class="landing-content">
+          <h6 class="reveal">Data Science &amp; Financial Engineering</h6>
+          <h1 class="reveal">Cyrine Akrout</h1>
+          <p class="reveal">Master's student at the École Polytechnique Fédérale de Lausanne (EPFL), passionate about machine learning, language models and quantitative finance — and about turning rigorous math into things that work on real data.</p>
+          <div class="landing-buttons reveal">
+            <a href="#projects" class="btn btn-outline">My Projects</a>
+            <a href="#contact" class="btn btn-solid">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="line-styling" aria-hidden="true"><span class="style-circle"></span><span class="style-circle"></span><span class="style-line"></span></div>
+      <div class="about-body">
+        <div class="about-description reveal">
+          <h2>Who I am</h2>
+          <p class="lead">I'm Cyrine, a Data Science &amp; Financial Engineering master's student at EPFL, holding a Master's Excellence Fellowship.</p>
+          <p>I studied Communication Systems at EPFL and spent a year at the University of Toronto, where I explored software engineering, security and financial engineering. Today I work at the crossroads of <span class="hl">machine learning</span> and <span class="hl">quantitative finance</span>: post-training language models, building deep networks for vision, pricing derivatives and designing systematic investment strategies.</p>
+          <p>I also work as a student assistant at EPFL, helping students in finance, probability, algorithms and signal processing. I love learning in teams and I'm looking for opportunities where I can keep growing while building things that matter.</p>
+          <div class="langs">
+            <span>French · native</span><span>English · C1</span><span>Arabic · B2</span>
+          </div>
+        </div>
+        <div class="about-img reveal"><img src="images/about.svg" alt="" width="400" height="310" /></div>
+      </div>
+
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="split">
+        <div class="cards">
+          <div class="info-card reveal">
+            <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M12 4 1 9l11 5 9-4.1V16h2V9z"/><path d="M5 12.5V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.5l-7 3.2z"/></svg></div>
+            <div><h6>2025 – Present</h6><h4>MSc in Data Science &amp; Financial Engineering</h4><h5>École Polytechnique Fédérale de Lausanne – EPFL</h5>
+              <p>Machine Learning · Modern NLP · Applied Data Analysis · Large-scale Data Science · Stochastic Calculus · Derivatives · Quantitative Risk Management</p></div>
+          </div>
+          <div class="info-card reveal">
+            <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M12 4 1 9l11 5 9-4.1V16h2V9z"/><path d="M5 12.5V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.5l-7 3.2z"/></svg></div>
+            <div><h6>2024 – 2025</h6><h4>Applied Science &amp; Engineering (exchange year)</h4><h5>University of Toronto</h5>
+              <p>Software Engineering · Computer Security · Random Processes · Financial Engineering · Artificial Intelligence</p></div>
+          </div>
+          <div class="info-card reveal">
+            <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M12 4 1 9l11 5 9-4.1V16h2V9z"/><path d="M5 12.5V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.5l-7 3.2z"/></svg></div>
+            <div><h6>2022 – 2024</h6><h4>BSc in Communication Systems <span class="chip">GPA 5.89/6</span></h4><h5>École Polytechnique Fédérale de Lausanne – EPFL</h5></div>
+          </div>
+          <div class="info-card reveal">
+            <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M12 4 1 9l11 5 9-4.1V16h2V9z"/><path d="M5 12.5V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.5l-7 3.2z"/></svg></div>
+            <div><h6>2021 – 2022</h6><h4>Preparatory Year (CMS) <span class="chip">GPA 5.8/6</span></h4><h5>École Polytechnique Fédérale de Lausanne – EPFL</h5></div>
+          </div>
+        </div>
+        <div class="split-img reveal"><img src="images/education.svg" alt="" width="400" height="300" /></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills" id="skills">
+      <h2 class="section-title reveal">Skills</h2>
+      <div class="marquee" aria-label="Skills">
+        <div class="marquee-track" id="skillsTrack">
+          <div class="skill"><img src="images/skills/python.svg" alt="" /><span>Python</span></div>
+          <div class="skill"><img src="images/skills/pytorch.svg" alt="" /><span>PyTorch</span></div>
+          <div class="skill"><img src="images/skills/tensorflow.svg" alt="" /><span>TensorFlow</span></div>
+          <div class="skill"><img src="images/skills/numpy.svg" alt="" /><span>NumPy</span></div>
+          <div class="skill"><img src="images/skills/pandas.svg" alt="" /><span>Pandas</span></div>
+          <div class="skill"><img src="images/skills/scikitlearn.svg" alt="" /><span>scikit-learn</span></div>
+          <div class="skill"><img src="images/skills/jupyter.svg" alt="" /><span>Jupyter</span></div>
+          <div class="skill"><img src="images/skills/java.svg" alt="" /><span>Java</span></div>
+          <div class="skill"><img src="images/skills/scala.svg" alt="" /><span>Scala</span></div>
+          <div class="skill"><img src="images/skills/c.svg" alt="" /><span>C</span></div>
+          <div class="skill"><img src="images/skills/mysql.svg" alt="" /><span>SQL</span></div>
+          <div class="skill"><img src="images/skills/react.svg" alt="" /><span>React</span></div>
+          <div class="skill"><img src="images/skills/typescript.svg" alt="" /><span>TypeScript</span></div>
+          <div class="skill"><img src="images/skills/firebase.svg" alt="" /><span>Firebase</span></div>
+          <div class="skill"><img src="images/skills/git.svg" alt="" /><span>Git</span></div>
+          <div class="skill"><img src="images/skills/latex.svg" alt="" /><span>LaTeX</span></div>
+        </div>
+      </div>
+      <div class="methods reveal">
+        <span>LLM post-training (LoRA · SFT · DPO · RLHF)</span><span>Semantic segmentation</span><span>Object detection</span><span>Stochastic calculus</span><span>Derivative pricing</span><span>Portfolio construction</span><span>Weights &amp; Biases</span>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="split split-rev">
+        <div class="split-img reveal"><img src="images/experience.svg" alt="" width="400" height="300" /></div>
+        <div class="cards">
+          <div class="info-card reveal">
+            <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M9 3h6a2 2 0 0 1 2 2v2h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3V5a2 2 0 0 1 2-2zm0 4h6V5H9z"/></svg></div>
+            <div><h6>Feb 2026 – Present</h6><h4>Student Assistant</h4><h5>EPFL</h5>
+              <p>Principles of Finance · Probability &amp; Statistics · Algorithms · Signal Processing</p></div>
+          </div>
+          <div class="info-card reveal">
+            <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M9 3h6a2 2 0 0 1 2 2v2h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3V5a2 2 0 0 1 2-2zm0 4h6V5H9z"/></svg></div>
+            <div><h6>Jun 2025</h6><h4>Machine Learning Intern</h4><h5>Exypnos</h5>
+              <p>Built an object-recognition pipeline for infrared images with lightweight deep learning models (YOLOv9, RT-DETR-Lite): preprocessing, training, inference and benchmarking on real IR data.</p></div>
+          </div>
+          <div class="info-card reveal">
+            <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M9 3h6a2 2 0 0 1 2 2v2h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3V5a2 2 0 0 1 2-2zm0 4h6V5H9z"/></svg></div>
+            <div><h6>Sep 2024 – Dec 2024</h6><h4>Software Engineer — BalanceAI</h4><h5>Dr. Jang's research lab with OISE, University of Toronto</h5>
+              <p>In a team of six, developed gamification features for an AI literacy-assessment platform for K-12 students, using React, TypeScript, Next.js and Firebase. <a href="https://www.balanceai.ca/" target="_blank" rel="noopener">balanceai.ca ↗</a></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="projects">
+      <h2 class="section-title reveal">Projects</h2>
+
+      <div class="project-group" id="data-science">
+        <h3 class="group-title reveal"><span class="group-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7l3.5 3.5M7 17l3.5-3.5M13.5 10.5 17 7M13.5 13.5 17 17"/></svg></span>Data Science &amp; Machine Learning</h3>
+        <div class="project-grid">
+        <article class="project reveal" style="--bg:#6d7bb2" tabindex="0">
+          <div class="project-content">
+            <h3>Post-Training Qwen3-1.7B</h3>
+            <img src="images/projects/qwen.svg" alt="Illustration of an LLM answering a math question" loading="lazy" />
+            <div class="project-btns"><a class="btn-report" href="https://github.com/cyrineakrout/Post-Training-Qwen3-1.7B-for-Verifiable-Reasoning-and-Alignment/blob/main/final_report/camykaz_project_report.pdf" target="_blank" rel="noopener" title="Read the report"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 1.5L18.5 9H13zM8 13h8v1.6H8zm0 3.4h8V18H8zm0-6.8h4v1.6H8z"/></svg><span>Report</span></a><a class="btn-code" href="https://github.com/cyrineakrout/Post-Training-Qwen3-1.7B-for-Verifiable-Reasoning-and-Alignment" target="_blank" rel="noopener" title="View the code" aria-label="View the code on GitHub"><svg viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></a></div>
+          </div>
+          <p class="project-desc">Post-training an LLM for math reasoning, knowledge, multilinguality and safety with LoRA, SFT, DPO and RLVR — then merging the specialists with TIES-Merging.</p>
+        </article>
+        <article class="project reveal" style="--bg:#5f9a86" tabindex="0">
+          <div class="project-content">
+            <h3>Road Segmentation</h3>
+            <img src="images/projects/road.svg" alt="Illustration of an aerial image and its road mask" loading="lazy" />
+            <div class="project-btns"><a class="btn-report" href="https://github.com/cyrineakrout/road-segmentation/blob/main/report.pdf" target="_blank" rel="noopener" title="Read the report"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 1.5L18.5 9H13zM8 13h8v1.6H8zm0 3.4h8V18H8zm0-6.8h4v1.6H8z"/></svg><span>Report</span></a><a class="btn-code" href="https://github.com/cyrineakrout/road-segmentation" target="_blank" rel="noopener" title="View the code" aria-label="View the code on GitHub"><svg viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></a></div>
+          </div>
+          <p class="project-desc">PyTorch pipeline on ~5,000 aerial images comparing U-Net, U-Net++, D-LinkNet and DeepLabV3. 3rd place on AIcrowd — F1 0.922, accuracy 0.958.</p>
+        </article>
+        <article class="project reveal" style="--bg:#b26d7f" tabindex="0">
+          <div class="project-content">
+            <h3>Heart Disease Prediction</h3>
+            <img src="images/projects/heart.svg" alt="Illustration of a heart with a pulse line" loading="lazy" />
+            <div class="project-btns"><a class="btn-report" href="https://github.com/cyrineakrout/heart-disease-prediction/blob/main/report.pdf" target="_blank" rel="noopener" title="Read the report"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 1.5L18.5 9H13zM8 13h8v1.6H8zm0 3.4h8V18H8zm0-6.8h4v1.6H8z"/></svg><span>Report</span></a><a class="btn-code" href="https://github.com/cyrineakrout/heart-disease-prediction" target="_blank" rel="noopener" title="View the code" aria-label="View the code on GitHub"><svg viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></a></div>
+          </div>
+          <p class="project-desc">Classification on the BRFSS health survey with robust preprocessing and regularized logistic regression.</p>
+        </article>
+        <article class="project reveal" style="--bg:#5f86a8" tabindex="0">
+          <div class="project-content">
+            <h3>Fashion-MNIST</h3>
+            <img src="images/projects/fashion.svg" alt="Illustration of a pixel grid classified as a t-shirt" loading="lazy" />
+            <div class="project-btns"><a class="btn-report" href="https://github.com/cyrineakrout/MNIST-Fashion/blob/main/report.pdf" target="_blank" rel="noopener" title="Read the report"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 1.5L18.5 9H13zM8 13h8v1.6H8zm0 3.4h8V18H8zm0-6.8h4v1.6H8z"/></svg><span>Report</span></a><a class="btn-code" href="https://github.com/cyrineakrout/MNIST-Fashion" target="_blank" rel="noopener" title="View the code" aria-label="View the code on GitHub"><svg viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></a></div>
+          </div>
+          <p class="project-desc">MLP, CNN and Vision Transformer compared on Fashion-MNIST, with PCA for dimensionality reduction.</p>
+        </article>
+        <article class="project reveal" style="--bg:#a8925f" tabindex="0">
+          <div class="project-content">
+            <h3>Stanford Dogs</h3>
+            <img src="images/projects/dogs.svg" alt="Illustration of a dog face with a classification label" loading="lazy" />
+            <div class="project-btns"><a class="btn-report" href="https://github.com/cyrineakrout/Stanford-Dogs/blob/main/report.pdf" target="_blank" rel="noopener" title="Read the report"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 1.5L18.5 9H13zM8 13h8v1.6H8zm0 3.4h8V18H8zm0-6.8h4v1.6H8z"/></svg><span>Report</span></a><a class="btn-code" href="https://github.com/cyrineakrout/Stanford-Dogs" target="_blank" rel="noopener" title="View the code" aria-label="View the code on GitHub"><svg viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></a></div>
+          </div>
+          <p class="project-desc">Linear regression, logistic regression and k-NN implemented and evaluated on the Stanford Dogs dataset.</p>
+        </article>
+        <article class="project reveal" style="--bg:#4e5a8f" tabindex="0">
+          <div class="project-content">
+            <h3>Infrared Object Detection</h3>
+            <img src="images/projects/infrared.svg" alt="Illustration of a thermal image with detection boxes" loading="lazy" />
+            <div class="project-btns"><span class="badge-intern">Internship · Exypnos</span></div>
+          </div>
+          <p class="project-desc">Lightweight detectors (YOLOv9, RT-DETR-Lite) for object recognition in infrared images, benchmarked on real IR datasets.</p>
+        </article>
+        </div>
+      </div>
+
+      <div class="project-group" id="finance">
+        <h3 class="group-title reveal"><span class="group-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20h18"/><path d="M4 16l4.5-5 4 3L20 5"/><path d="M15 5h5v5"/></svg></span>Quantitative Finance</h3>
+        <div class="project-grid">
+        <article class="project reveal" style="--bg:#a77b62" tabindex="0">
+          <div class="project-content">
+            <h3>Dividend Derivatives Pricing</h3>
+            <img src="images/projects/dividend.svg" alt="Illustration of stacked coins and a dividend curve" loading="lazy" />
+            <div class="project-btns"><a class="btn-report" href="https://github.com/cyrineakrout/dividend-derivatives/blob/main/project_report.pdf" target="_blank" rel="noopener" title="Read the report"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 1.5L18.5 9H13zM8 13h8v1.6H8zm0 3.4h8V18H8zm0-6.8h4v1.6H8z"/></svg><span>Report</span></a><a class="btn-code" href="https://github.com/cyrineakrout/dividend-derivatives" target="_blank" rel="noopener" title="View the code" aria-label="View the code on GitHub"><svg viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></a></div>
+          </div>
+          <p class="project-desc">Valuing dividend futures and options under Black-Scholes and affine stochastic dividend models — Feynman–Kac, Riccati ODEs, calibrated to market data.</p>
+        </article>
+        <article class="project reveal" style="--bg:#8a6db2" tabindex="0">
+          <div class="project-content">
+            <h3>FX Returns &amp; Strategies</h3>
+            <img src="images/projects/fx.svg" alt="Illustration of currency coins being exchanged" loading="lazy" />
+            <div class="project-btns"><a class="btn-report" href="https://github.com/cyrineakrout/fx-returns-and-strategies/blob/main/project_report.pdf" target="_blank" rel="noopener" title="Read the report"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 1.5L18.5 9H13zM8 13h8v1.6H8zm0 3.4h8V18H8zm0-6.8h4v1.6H8z"/></svg><span>Report</span></a><a class="btn-code" href="https://github.com/cyrineakrout/fx-returns-and-strategies" target="_blank" rel="noopener" title="View the code" aria-label="View the code on GitHub"><svg viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></a></div>
+          </div>
+          <p class="project-desc">Carry, momentum, dollar, risk-parity and mean-variance strategies on six G10 currencies — carry turns out to be the strongest predictor of FX returns.</p>
+        </article>
+        </div>
+      </div>
+
+      <div class="more reveal"><a href="https://github.com/cyrineakrout?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">More on GitHub</a></div>
+    </section>
+
+    <!-- ============ BEYOND THE CODE ============ -->
+    <section class="section" id="hobbies">
+      <div class="hobbies">
+        <h2 class="section-title reveal">Beyond the code</h2>
+        <div class="hobby-grid">
+          <div class="hobby hobby-feature reveal">
+            <svg class="mic" viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="58" fill="rgba(255,255,255,.08)"/>
+              <rect x="44" y="18" width="32" height="50" rx="16" fill="#f4f2ff"/>
+              <g stroke="#7b7cf0" stroke-width="2" opacity=".6"><path d="M46 30h28M46 38h28M46 46h28M46 54h28"/></g>
+              <path d="M36 54c0 14 10.7 24 24 24s24-10 24-24" stroke="#f4f2ff" stroke-width="5" stroke-linecap="round" fill="none"/>
+              <path d="M60 78v16M46 98h28" stroke="#f4f2ff" stroke-width="5" stroke-linecap="round"/>
+              <g fill="#ffd166"><path d="M90 26l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M22 70l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5z"/></g>
+              <g fill="#ff8e6e"><circle cx="96" cy="64" r="3"/><path d="M99 64V48l8-2v14" stroke="#ff8e6e" stroke-width="2" fill="none"/><circle cx="104" cy="60" r="3"/></g>
+            </svg>
+            <div>
+              <h4>Singing &amp; karaoke</h4>
+              <p>Music is my favourite way to switch off. I love to sing, and karaoke nights with friends are some of my best moments: give me a mic and a good song, and I'm happy.</p>
+            </div>
+          </div>
+          <div class="hobby reveal"><span class="hobby-emoji" aria-hidden="true">🎵</span><h4>Music</h4><p>Always listening to something new.</p></div>
+          <div class="hobby reveal"><span class="hobby-emoji" aria-hidden="true">💃</span><h4>Oriental dance</h4><p>Rhythm and expression.</p></div>
+          <div class="hobby reveal"><span class="hobby-emoji" aria-hidden="true">📚</span><h4>Thriller novels</h4><p>The more plot twists, the better.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <h2 class="section-title reveal">Contacts</h2>
+      <div class="contact-body">
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field"><input type="text" id="name" name="name" placeholder=" " required autocomplete="name" /><label for="name">Name</label></div>
+          <div class="field"><input type="email" id="email" name="email" placeholder=" " required autocomplete="email" /><label for="email">Email</label></div>
+          <div class="field"><textarea id="message" name="message" rows="6" placeholder=" " required></textarea><label for="message">Message</label></div>
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="form-foot">
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            <button type="submit" class="btn btn-solid btn-send"><span class="label">Send</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg></button>
+          </div>
+        </form>
+        <div class="contact-side reveal">
+          <p>Have an opportunity, a question about a project, or just want to say hi? Send me a message here and I'll get back to you.</p>
+          <div class="contact-icons">
+          <a class="contact-link" href="https://www.linkedin.com/in/cyrineakrout/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><span class="ci"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></span></a>
+          <a class="contact-link" href="https://github.com/cyrineakrout" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><span class="ci"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>Made with <span class="heart">❤</span> by Cyrine</p></footer>
+
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 15 6-6 6 6"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
